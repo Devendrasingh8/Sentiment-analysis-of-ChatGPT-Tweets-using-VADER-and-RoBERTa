@@ -16,15 +16,22 @@ Results:
 After using both analyses, it is clear that nearly 18% of tweets about ChatGPT were negative, and 72% of tweets were either positive or neutral.
 
 In the analysis by the VADER model, the maximum number of tweets were positive; however, in the analysis by the RoBERTa model, tweets were mostly neutral.
+
 ![](https://github.com/Devendrasingh8/Sentiment-analysis-of-ChatGPT-Tweets-using-VADER-and-RoBERTa/blob/main/VADER%20Model-%20Sentiment%20Analysis.png)
 
 It is interesting to note that not all tweets tagged as positive by the VADER model were categorized as positive by the RoBERTa model. And the same is true for other sentiments that are negative or neutral.
 
+![](https://github.com/Devendrasingh8/Sentiment-analysis-of-ChatGPT-Tweets-using-VADER-and-RoBERTa/blob/main/RoBERTa%20Model%20-%20Sentiment%20Analysis.png)
+
 Out of the tweets that were tagged negative by the VADER model, only about 50% were tagged negative. However, nearly 13% and 37% of those tweets were reported positively and neutrally by the RoBERTa model, respectively. Similarly, you can see the composition of RoBERTa sentiment analysis in neutral and positive VADER tweets.
+
+![](https://github.com/Devendrasingh8/Sentiment-analysis-of-ChatGPT-Tweets-using-VADER-and-RoBERTa/blob/main/Composition%20of%20RoBERTa%20Model%20results%20in%20VADER%20Sentiments.png)
 
 Interpretation:
 
 To understand these results better, let us understand how these two models work. VADER sentiment analysis primarily uses a lexicon that converts lexical characteristics into sentiment scores, a measure of the strength of an emotion. By adding the intensity of each word in a text, it determines the sentiment score of that text. However, RoBERTa is trained on a massive dataset of over 160GB of uncompressed text, and it is trained with full sentences. This transformer not only accounts for words but also the context related to other words. This model can show the polarity of the overall idea of the author. It can also guess sarcasm and hidden criticism.
+
+![](https://github.com/Devendrasingh8/Sentiment-analysis-of-ChatGPT-Tweets-using-VADER-and-RoBERTa/blob/main/note%20R_sentiment%20is%20RoBERTa%20result%20and%20sentiment%20is%20VADER%20result.png)
 
 It can be seen that the first two tweets are positive, but they were given negative sentiment by VADER analysis, but after doing RoBERTa analysis, we got positive sentiment as a result. and the opposite has happened in the following three overall negative tweets.
 
