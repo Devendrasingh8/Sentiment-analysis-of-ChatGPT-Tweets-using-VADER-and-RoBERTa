@@ -16,6 +16,7 @@ Results:
 After using both analyses, it is clear that nearly 18% of tweets about ChatGPT were negative, and 72% of tweets were either positive or neutral.
 
 In the analysis by the VADER model, the maximum number of tweets were positive; however, in the analysis by the RoBERTa model, tweets were mostly neutral.
+![](https://github.com/Devendrasingh8/Sentiment-analysis-of-ChatGPT-Tweets-using-VADER-and-RoBERTa/blob/main/VADER%20Model-%20Sentiment%20Analysis.png)
 
 It is interesting to note that not all tweets tagged as positive by the VADER model were categorized as positive by the RoBERTa model. And the same is true for other sentiments that are negative or neutral.
 
